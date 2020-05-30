@@ -1,0 +1,110 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Chloe';
+    src: url(fonts/Chloe-Regular.otf);
+  }
+
+@font-face {
+    font-family: 'The Light Font';
+    src: url(fonts/TheLightFont.ttf);
+  }
+
+/* Layout */
+
+body {
+    background-color: rgba(232, 228, 221, .5);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section { 
+    height: 100vh;
+    width: 100%; 
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.container q {
+    width: 50%;
+}
+
+/* Typography */
+
+h1, h2, h3, h4 {
+    font-family: 'Chloe';
+    line-height: 1em;
+    color: #e5b7ac;
+}
+
+h5, h6 {
+    font-family: 'The Light Font';
+    color: #e5b7ac;
+}
+
+p {
+    font-family: 'Capitolina';
+}
+
+h1 {
+    font-size: 2.2em;
+}
+
+q::before,
+q::after {
+    content: none;
+    width: 80%;
+}
+
+nav ul {
+    font-family: 'The Light Font';
+}
+
+/* Colors */
+
+.mustard h2 {
+    color: #c7b151;
+}
+
+section .pink {
+    color: #e5b7ac;
+}
+
+.blue {
+    background-color: #c1cecc;
+}
+
+.green {
+    background-color: #275230;
+}
+
+.pink {
+    background-color: #e5b7ac;
+}
+
+/* Articles */
+
+.img-container {
+    width: 100%;
+}
+
+/* Navigation */
+
+nav img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+}
