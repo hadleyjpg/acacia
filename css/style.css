@@ -4,8 +4,8 @@
 
 :root {
 	--gray: #ccc;
-	--cream: rgba(232, 228, 221, .5);
-	--red: #a00;
+	--cream: #e8e4de;
+	--red: #db4f45;
     --green: #275230;
     --pink: #e5b7ac;
     --mustard: #c7b151;
@@ -14,7 +14,9 @@
 	--default-duration: 0.3s;
 }
 
-/* Fonts */
+/* --------------
+      Fonts 
+----------------- */
 
 @font-face {
     font-family: 'Chloe';
@@ -26,7 +28,9 @@
     src: url(fonts/TheLightFont.ttf);
   }
 
-/* Layout */
+/* --------------
+      Layout 
+----------------- */
 
 body {
     background-color: rgba(232, 228, 221, .5);
@@ -52,17 +56,19 @@ section {
     width: 50%;
 }
 
-/* Typography */
+/* --------------
+    Typography 
+----------------- */
 
 h1, h2, h3, h4 {
     font-family: 'Chloe';
     line-height: 1em;
-    color: #e5b7ac;
+    color: var(--pink);
 }
 
 h5, h6 {
     font-family: 'The Light Font';
-    color: #e5b7ac;
+    color: var(--pink);
 }
 
 p {
@@ -83,35 +89,41 @@ nav ul {
     font-family: 'The Light Font';
 }
 
-/* Colors */
+/* --------------
+      Colors 
+----------------- */
 
 .mustard h2 {
-    color: #c7b151;
+    color: var(--mustard);
 }
 
 section .pink {
-    color: #e5b7ac;
+    color: var(--pink);
 }
 
 .blue {
-    background-color: #c1cecc;
+    background-color: var(--blue);
 }
 
 .green {
-    background-color: #275230;
+    background-color: var(--green);
 }
 
 .pink {
-    background-color: #e5b7ac;
+    background-color: var(--pink);
 }
 
-/* Articles */
+/* --------------
+     Articles 
+----------------- */
 
 .img-container {
     width: 100%;
 }
 
-/* Navigation */
+/* --------------
+    Navigation 
+----------------- */
 
 nav img {
     height: 50px;
