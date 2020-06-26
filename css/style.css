@@ -1,3 +1,19 @@
+/* --------------
+     General 
+----------------- */
+
+:root {
+	--gray: #ccc;
+	--cream: rgba(232, 228, 221, .5);
+	--red: #a00;
+    --green: #275230;
+    --pink: #e5b7ac;
+    --mustard: #c7b151;
+    --blue: #c1cecc;
+	--default-shadow: rgba(0, 0, 0, 0.25);
+	--default-duration: 0.3s;
+}
+
 /* Fonts */
 
 @font-face {
