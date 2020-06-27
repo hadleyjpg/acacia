@@ -398,3 +398,8 @@ button, input, optgroup, select, textarea {
   font-family: unset;
   font: unset;
 }
+
+h5 {
+  margin-block-start: .5em;
+  margin-block-end: 1em;
+}

@@ -10,6 +10,9 @@
     --pink: #e5b7ac;
     --mustard: #c7b151;
     --blue: #c1cecc;
+    --sub: 'The Light Font';
+    --title: 'Chloe';
+    --copy: 'Capitolina';
 	--default-shadow: rgba(0, 0, 0, 0.25);
 	--default-duration: 0.3s;
 }
@@ -40,7 +43,8 @@ body {
 
 section { 
     height: 100vh;
-    width: 100%; 
+    width: 100%;
+    padding: 3em 0 0;
 }
 
 .container {
@@ -48,8 +52,12 @@ section {
     margin: 0 auto;
 }
 
-section {
-    padding: 40px 0;
+.img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 2em;
+    align-items: flex-end;
 }
 
 /* --------------
@@ -57,18 +65,18 @@ section {
 ----------------- */
 
 h1, h2, h3, h4 {
-    font-family: 'Chloe';
+    font-family: var(--title);
     line-height: 1em;
     color: var(--pink);
 }
 
 h5, h6 {
-    font-family: 'The Light Font';
+    font-family: var(--sub);
     color: var(--pink);
 }
 
 p {
-    font-family: 'Capitolina';
+    font-family: var(--copy);
 }
 
 h1 {
@@ -76,24 +84,24 @@ h1 {
 }
 
 ul.nav {
-    font-family: 'The Light Font';
+    font-family: var(--sub);
 }
 
 label {
-    font-family: 'The Light Font';
+    font-family: var(--sub);
     color: var(--green);
     margin: 1.5em 0 .2em;
 }
 
 option {
-    font-family: 'Capitolina';
+    font-family: var(--copy);
 }
 
 input, 
 optgroup, 
 select, 
 textarea {
-    font-family: 'Capitolina' !important;
+    font-family: var(--copy) !important;
     font-size: 14px !important;
   }
 
@@ -102,35 +110,47 @@ textarea {
   [type="reset"], 
   [type="submit"] {
       color: var(--cream);
-      font-family: 'The Light Font';
+      font-family: var(--sub);
   }
 
 /* --------------
       Colors 
 ----------------- */
 
-.mustard h2 {
+.mustard {
     color: var(--mustard);
 }
 
-section .pink {
-    color: var(--pink);
-}
-
-.blue {
-    background-color: var(--blue);
+.red {
+    color: var(--red);
 }
 
 .green {
+    color: var(--green);
+}
+
+.cream {
+    color: var(--cream);
+}
+
+.blue-bg {
+    background-color: var(--blue);
+}
+
+.green-bg {
     background-color: var(--green);
 }
 
-.pink {
+.pink-bg {
     background-color: var(--pink);
 }
 
 li a {
     color: var(--green);
+}
+
+li a:hover {
+    color: var(--pink);
 }
 
 /* --------------
@@ -148,7 +168,7 @@ li a {
 nav ul {
     list-style-type: none;
     padding-inline-start: unset;
-    font-family: 'The Light Font';
+    font-family: var(--sub);
     color: var(--green);
     display: flex;
     justify-content: space-evenly;
@@ -231,4 +251,23 @@ input:focus,
 textarea:focus,
 select:focus {
     border: 1px solid var(--pink);
+}
+
+/* --------------
+      Lists 
+----------------- */
+
+.img-container ul {
+    list-style-type: none;
+}
+
+.img-container ul li {
+    margin: 0.5em 0;
+}
+
+select {
+    padding: 5px;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=) no-repeat right var(--cream);
+    -webkit-appearance: none;
+    background-position-x: 280px;
 }
