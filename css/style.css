@@ -223,9 +223,15 @@ ul.nav.show {
     text-align: center;
 }
 
+button.hamburger {
+    height: 45px;
+    width: 45px;
+    padding: 0;
+}
+
 .hamburger {
     background-color: var(--cream);
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 @media (max-width: 1001px) {
