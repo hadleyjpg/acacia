@@ -10,8 +10,8 @@
     --pink: #e5b7ac;
     --mustard: #c7b151;
     --blue: #c1cecc;
-    --sub: 'The Light Font';
-    --title: 'Chloe';
+    --sub: 'gaultier', sans-serif;
+    --title: 'lust', serif;
     --copy: 'Capitolina';
 	--default-shadow: rgba(0, 0, 0, 0.25);
 	--default-duration: 0.3s;
@@ -31,6 +31,8 @@
     src: url(fonts/TheLightFont.ttf);
   }
 
+@import url("https://use.typekit.net/oxw4kgs.css");
+
 /* --------------
       Layout 
 ----------------- */
@@ -40,13 +42,13 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-
+/*
 .scroll-container {
     height: calc(100vh - 65px);
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
 }
-
+*/
 section { 
     height: calc(100vh - 65px);
     width: 100%;
@@ -71,7 +73,6 @@ section {
 
 footer {
     height: 65px;
-    position: fixed;
     z-index: 99;
     left: 0;
     bottom: 0;
@@ -92,6 +93,7 @@ h1, h2, h3, h4 {
 h5, h6 {
     font-family: var(--sub);
     color: var(--pink);
+    text-transform: uppercase;
 }
 
 p {
@@ -244,6 +246,20 @@ button.hamburger {
     .hamburger {
         display: none;
     }
+}
+
+/* --------------
+     Carousel 
+----------------- */
+
+.caro-container {
+    overflow: hidden;
+}
+
+.caro-slide {
+    display: flex;
+    width: 290px;
+    height: 100%;
 }
 
 /* --------------
