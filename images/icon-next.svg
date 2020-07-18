@@ -1,12 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
-  <g id="Group_5" data-name="Group 5" transform="translate(-38 -406)">
-    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(38 406)" fill="none" stroke="#e8e4dd" stroke-width="1">
-      <circle cx="16.5" cy="16.5" r="16.5" stroke="none"/>
-      <circle cx="16.5" cy="16.5" r="16" fill="none"/>
-    </g>
-    <g id="Polygon_1" data-name="Polygon 1" transform="translate(62.5 416.5) rotate(90)" fill="none">
-      <path d="M6.5,0,13,12H0Z" stroke="none"/>
-      <path d="M 6.5 2.099584579467773 L 1.67894172668457 11 L 11.32105827331543 11 L 6.5 2.099584579467773 M 6.5 0 L 13 12 L 0 12 L 6.5 0 Z" stroke="none" fill="#e8e4dd"/>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 33 33" style="enable-background:new 0 0 33 33;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#E8E4DD;}
+</style>
+<g id="Group_5" transform="translate(-38 -406)">
+	<g id="Ellipse_2" transform="translate(38 406)">
+		<circle class="st0" cx="16.5" cy="16.5" r="16.5"/>
+		<path class="st1" d="M16.5,33C7.4,33,0,25.6,0,16.5C0,7.4,7.4,0,16.5,0C25.6,0,33,7.4,33,16.5C33,25.6,25.6,33,16.5,33z M16.5,1
+			C8,1,1,8,1,16.5S8,32,16.5,32S32,25,32,16.5S25,1,16.5,1z"/>
+	</g>
+	<g id="Polygon_1" transform="translate(62.5 416.5) rotate(90)">
+		<path class="st0" d="M6.5,0L13,12H0L6.5,0z"/>
+		<path class="st1" d="M6.5,2.1L1.7,11h9.6L6.5,2.1 M6.5,0L13,12H0L6.5,0z"/>
+	</g>
+</g>
 </svg>

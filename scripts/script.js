@@ -25,14 +25,14 @@ caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 //Buton Listeners
 nextBtn.addEventListener('click', () => {
     if (counter >= caroImages.length -1) return;
-    caroSlide.style.transition = "transform 0.4s ease-in-out";
+    caroSlide.style.transition = "transform .7s ease-in-out";
     counter++;
     caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
 
 prevBtn.addEventListener('click', () => {
     if (counter <= 0) return;
-    caroSlide.style.transition = "transform 0.4s ease-in-out";
+    caroSlide.style.transition = "transform .7s ease-in-out";
     counter--;
     caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 });
