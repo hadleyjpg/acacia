@@ -50,9 +50,9 @@ body {
 }
 */
 section { 
-    height: calc(100vh - 65px);
+    /* height: calc(100vh - 65px); */
     width: 100%;
-    padding: 3em 0 0;
+    padding: 3em 0 ;
     scroll-snap-align: center;
     align-items: center;
     justify-content: center;
@@ -105,6 +105,40 @@ footer {
     margin-bottom: 1em;
 }
 
+.editor-section {
+    padding-bottom: 4em;
+}
+
+@media (min-width: 800px) {
+
+    .article-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 85%;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+
+    .article-flex section {
+        flex: 4;
+        padding-bottom: 2em;
+    }
+}
+
+@media (max-width: 799px) {
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    .article-flex {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
 /* --------------
     Typography 
 ----------------- */
@@ -150,7 +184,7 @@ optgroup,
 select, 
 textarea {
     font-family: var(--copy) !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
 
   button,
@@ -207,11 +241,11 @@ textarea {
 }
 
 li a {
-    color: var(--green);
+    color: var(--green) !important;
 }
 
 li a:hover {
-    color: var(--pink);
+    color: var(--pink) !important;
 }
 
 /* --------------
@@ -293,6 +327,10 @@ nav a {
     text-transform: uppercase;
 }
 
+.active {
+    color: var(--pink) !important;
+}
+
 /* --------------
      Carousel 
 ----------------- */
@@ -329,9 +367,19 @@ nav a {
 
 form {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
+  
+input {
+    flex: 1 1 10ch;
+    margin: 0.5rem;
+}
+
+textarea {
+    flex: 3 1 10ch;
+    margin: 0.5rem;
+}
+
 
 .form-container {
     width: 85%;
@@ -343,9 +391,9 @@ button,
 [type="reset"], 
 [type="submit"] {
     margin: 1.5em 0;
-    background-color: var(--green);
-    border: none;
+    border: 1.5px solid var(--black);
     min-height: 2.5em;
+    font-family: var(--sub);
 }
 
 button:hover,
@@ -358,22 +406,24 @@ button:hover,
 input,
 textarea,
 select {
-    border: 1px solid var(--cream);
+    border: 1.5px solid var(--cream);
 }
 
 input {
-    min-height: 1em;
+    min-height: 2em;
   }
 
   textarea {
-    min-height: 5em;
+    min-height: 6em;
   }
 
 input:focus,
 textarea:focus,
 select:focus {
-    border: 1px solid var(--pink);
+    border: 1.5px solid var(--pink);
 }
+
+
 
 /* --------------
       Lists 
@@ -403,4 +453,51 @@ button.article-btn {
     margin-right: 0;
     font-family: var(--sub);
     text-transform: uppercase;
+}
+
+/* --------------
+     Desktop
+----------------- */
+
+@media (min-width: 700px) {
+    .contributor-container {
+        display: flex;
+        margin-bottom: 3em;
+    }
+
+    .copy-container {
+        margin-right: 2em;
+    }
+
+    .jen-copy {
+        margin-left: 2em;
+    }
+
+    .jen-image h1, .jen-image h5 {
+        margin-left: 35px;
+    }
+
+    .jen-image h1, .hadley-image h1 {
+        margin-top: -20px;
+        margin-block-end: 0px;
+    }
+
+    .jen-image img, .hadley-image img {
+        width: 60%;
+    }
+
+    .jen-image, .hadley-image {
+        flex-grow: 1;
+    }
+
+    .caro-slide {
+        display: flex;
+        height: 100vh;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .caro-slide section {
+        flex-grow: 1;
+    }
 }
