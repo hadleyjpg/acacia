@@ -10,7 +10,7 @@ hamburger.addEventListener('click', () => {
 ----------------- */
 
 const caroSlide = document.querySelector('.caro-slide');
-const caroImages = document.querySelectorAll('.caro-slide img');
+const caroSections = document.querySelectorAll('.caro-slide section');
 
 //Butons
 const prevBtn = document.querySelector('#prevBtn');
@@ -18,13 +18,13 @@ const nextBtn = document.querySelector('#nextBtn');
 
 //Counter
 let counter = 1;
-const size = caroImages[0].clientWidth;
+const size = caroSections[0].clientWidth;
 
 caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 //Buton Listeners
 nextBtn.addEventListener('click', () => {
-    if (counter >= caroImages.length -1) return;
+    if (counter >= caroSections.length -1) return;
     caroSlide.style.transition = "transform .7s ease-in-out";
     counter++;
     caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -38,14 +38,14 @@ prevBtn.addEventListener('click', () => {
 });
 
 caroSlide.addEventListener('transitionend', () => {
-    if (caroImages[counter].id === 'lastClone') {
+    if (caroSections[counter].id === 'lastClone') {
         caroSlide.style.transition = "none";
-        counter = caroImages.length - 2;
+        counter = caroSections.length - 2;
         caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
-    if(caroImages[counter].id === 'firstClone') {
+    if(caroSections[counter].id === 'firstClone') {
         caroSlide.style.transition = "none";
-        counter = caroImages.length - counter ;
+        counter = caroSections.length - counter ;
         caroSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 });

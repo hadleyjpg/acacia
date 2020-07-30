@@ -41,6 +41,9 @@ body {
     background-color: rgba(232, 228, 221, .5);
     margin: 0 auto;
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 /*
 .scroll-container {
@@ -51,7 +54,7 @@ body {
 */
 section { 
     /* height: calc(100vh - 65px); */
-    width: 100%;
+    /* width: 100%; */
     padding: 3em 0 ;
     scroll-snap-align: center;
     align-items: center;
@@ -72,13 +75,12 @@ section {
 }
 
 footer {
-    height: 65px;
     z-index: 99;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: var(--cream);
-    position: fixed;
+    margin-top: 3.5em;
 }
 
 .editor-section {
@@ -341,8 +343,6 @@ nav a {
 
 .caro-slide {
     display: flex;
-    width: 290px;
-    height: 298px;
 }
 
 .img-container button {
@@ -367,11 +367,11 @@ nav a {
 
 form {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
   
 input {
-    flex: 1 1 10ch;
     margin: 0.5rem;
 }
 
@@ -384,6 +384,13 @@ textarea {
 .form-container {
     width: 85%;
     margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+    
+    .form-container {
+        width: 65%;
+    }
 }
 
 button,
@@ -444,6 +451,12 @@ select {
     background-position-x: 280px;
 }
 
+@media (min-width: 1000px) {
+    select {
+        background-position-x: 1040px;
+    }
+}
+
 /* --------------
      Buttons 
 ----------------- */
@@ -492,12 +505,11 @@ button.article-btn {
 
     .caro-slide {
         display: flex;
-        height: 100vh;
         align-items: stretch;
         justify-content: space-between;
     }
 
     .caro-slide section {
-        flex-grow: 1;
+        flex: 1;
     }
 }
