@@ -10,3 +10,8 @@ The contact forms are not fully functioning. I added them to site so I could wor
 ## Article Links
 
 I did not create individual pages for each article so the 'Read More' buttons will not connect to a page.
+
+
+## Requirements Met
+
+I implemented a hamburger menu on mobile devices. I used flexbox to create the layout of the article excerpts on the homepage, fashion, culture, wellness & profiles pages. Lastly I created an image carousel for desktop only that displays 3 article excerpts and slides through them 1 at a time.
