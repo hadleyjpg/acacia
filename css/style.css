@@ -46,16 +46,7 @@ body {
     flex-direction: column;
 }
 
-.scroll-container {
-    height: calc(100vh - 65px);
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-}
-
 section { 
-    scroll-snap-align: center;
-    align-items: center;
-    justify-content: center;
     padding: 3em 0;
 }
 
@@ -123,7 +114,6 @@ footer {
 
     .article-flex {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         width: 85%;
         margin: 0 auto;
@@ -131,7 +121,7 @@ footer {
     }
 
     .article-flex section {
-        flex: 4;
+        flex: 5;
         padding-bottom: 2em;
     }
 }
@@ -142,7 +132,7 @@ footer {
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) and (max-width: 799px) {
     .article-flex {
         margin: 0 auto;
         width: 80%;
@@ -156,13 +146,13 @@ footer {
 h1, h2, h3, h4 {
     font-family: var(--title);
     line-height: 1em;
-    color: var(--pink);
+    color: var(--pink, #e5b7ac);
 }
 
 h5, h6 {
     font-family: var(--sub);
     font-weight: 500;
-    color: var(--pink);
+    color: var(--pink, #e5b7ac);
     text-transform: uppercase;
 }
 
@@ -357,8 +347,10 @@ nav a {
     padding-left: 7%;
 }
 
+@media (min-width: 1200px) {
+
 .carousel-multiple-items section {
-    height: 700px;
+    height: 640px;
 }
 
 .ec {
@@ -428,6 +420,7 @@ nav a {
     transform: rotate(45deg);
     right: 47vw;
 }
+}
 
 /* --------------
       Forms 
@@ -466,7 +459,7 @@ button,
 [type="reset"], 
 [type="submit"] {
     margin: 1.5em 0;
-    border: 1.5px solid var(--black);
+    border: none;
     min-height: 2.5em;
     font-family: var(--sub);
 }
@@ -534,6 +527,8 @@ button.article-btn {
     margin-right: 0;
     font-family: var(--sub);
     text-transform: uppercase;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 /* --------------
@@ -569,5 +564,25 @@ button.article-btn {
 
     .jen-image, .hadley-image {
         flex-grow: 1;
+    }
+}
+
+@media (min-width: 2000px) {
+    .desktop {
+        display: none;
+    }
+
+    button.article-btn {
+        font-size: 18px;
+    }
+
+    q h1 {
+        font-size: 4em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .desktop {
+        display: none;
     }
 }
