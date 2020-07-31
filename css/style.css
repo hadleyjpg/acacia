@@ -48,6 +48,7 @@ body {
 
 section { 
     padding: 3em 0;
+    align-items: center;
 }
 
 .container {
@@ -68,7 +69,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--cream);
+    background-color: var(--cream, #e8e4de);
     margin-top: 3.5em;
 }
 
@@ -146,7 +147,7 @@ footer {
 h1, h2, h3, h4 {
     font-family: var(--title);
     line-height: 1em;
-    color: var(--pink, #e5b7ac);
+    color: #e5b7ac;
 }
 
 h5, h6 {
@@ -171,7 +172,7 @@ ul.nav {
 
 label {
     font-family: var(--sub);
-    color: var(--green);
+    color: var(--green, #275230);
     margin: 1.5em 0 .2em;
 }
 
@@ -191,7 +192,7 @@ textarea {
   [type="button"], 
   [type="reset"], 
   [type="submit"] {
-      color: var(--cream);
+      color: var(--cream, #e8e4de);
       font-family: var(--sub);
   }
 
@@ -209,15 +210,15 @@ textarea {
 }
 
 .red {
-    color: var(--red);
+    color: var(--red, #db4f45);
 }
 
 .green {
-    color: var(--green);
+    color: var(--green, #275230);
 }
 
 .cream {
-    color: var(--cream);
+    color: var(--cream, #e8e4de);
 }
 
 .blue-bg {
@@ -225,15 +226,15 @@ textarea {
 }
 
 .green-bg {
-    background-color: var(--green);
+    background-color: var(--green, #275230);
 }
 
 .pink-bg {
-    background-color: var(--pink);
+    background-color: var(--pink, #e5b7ac);
 }
 
 .red-bg {
-    background-color: var(--red);
+    background-color: var(--red, #db4f45);
 }
 
 .mustard-bg {
@@ -241,11 +242,11 @@ textarea {
 }
 
 li a {
-    color: var(--green) !important;
+    color: var(--green, #275230) !important;
 }
 
 li a:hover {
-    color: var(--pink) !important;
+    color: var(--pink, #e5b7ac) !important;
 }
 
 /* --------------
@@ -264,7 +265,7 @@ nav ul {
     list-style-type: none;
     padding-inline-start: unset;
     font-family: var(--sub);
-    color: var(--green);
+    color: var(--green, #275230);
     display: flex;
     justify-content: space-evenly;
     padding: 1.5em 0;
@@ -307,7 +308,7 @@ button.hamburger {
 }
 
 .hamburger {
-    background-color: var(--cream);
+    background-color: var(--cream, #e8e4de);
     border-radius: 50%;
 }
 
@@ -328,7 +329,7 @@ nav a {
 }
 
 .active {
-    color: var(--pink) !important;
+    color: var(--pink, #e5b7ac) !important;
 }
 
 /* --------------
@@ -399,8 +400,8 @@ nav a {
 .ec .ec__nav { 
     position: absolute;
     bottom: 10px;
-    border-top: 2px solid var(--cream);
-    border-right: 2px solid var(--cream);
+    border-top: 2px solid var(--cream, #e8e4de);
+    border-right: 2px solid var(--cream, #e8e4de);
     width: 15px;
     height: 15px;
     cursor: pointer;
@@ -468,13 +469,13 @@ button:hover,
 [type="button"]:hover, 
 [type="reset"]:hover, 
 [type="submit"]:hover {
-    background-color: var(--pink);
+    background-color: var(--pink, #e5b7ac);
 }
 
 input,
 textarea,
 select {
-    border: 1.5px solid var(--cream);
+    border: 1.5px solid var(--cream, #e8e4de);
 }
 
 input {
@@ -488,7 +489,7 @@ input {
 input:focus,
 textarea:focus,
 select:focus {
-    border: 1.5px solid var(--pink);
+    border: 1.5px solid var(--pink, #e5b7ac);
 }
 
 
@@ -507,7 +508,7 @@ select:focus {
 
 select {
     padding: 5px;
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=) no-repeat right var(--cream);
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=) no-repeat right var(--cream, #e8e4de);
     -webkit-appearance: none;
     background-position-x: 280px;
 }
