@@ -282,7 +282,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     selector: '',
     items: 3,
     step: 1,
-    speed: 300,
+    speed: 500,
     start: 0,
     pagination: true,
     navs: true,
