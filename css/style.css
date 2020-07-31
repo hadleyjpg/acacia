@@ -116,8 +116,16 @@ footer {
     line-height: 1.25em;
 }
 
+div.form-container,
+div.article-flex {
+    flex: 1;
+}
 
-
+@media (max-width: 699px) {
+    .hadley-image img {
+        margin-top: 2em;
+    }
+}
 
 @media (min-width: 800px) {
 
@@ -159,6 +167,12 @@ footer {
     }
 }
 
+@media (max-width: 1199px) {
+    .carousel-multiple-items {
+        display: none;
+    }
+}
+
 /* --------------
     Typography 
 ----------------- */
@@ -192,7 +206,7 @@ ul.nav {
 label {
     font-family: var(--sub);
     color: var(--green, #275230);
-    margin: 1.5em 0 .2em;
+    margin: 1.5em .5em .2em;
 }
 
 option {
@@ -335,7 +349,7 @@ button.hamburger {
     ul.nav {
         display: none;
         width: 100%;
-        
+
     }
 }
 
@@ -442,6 +456,10 @@ nav a {
     transform: rotate(45deg);
     right: 47vw;
 }
+
+.article-flex.mobile {
+    display: none;
+}
 }
 
 /* --------------
@@ -454,8 +472,10 @@ form {
     flex-wrap: wrap;
 }
   
-input {
+input,
+select {
     margin: 0.5rem;
+    min-height: 2em;
 }
 
 textarea {
@@ -499,10 +519,6 @@ select {
     border: 1.5px solid var(--cream, #e8e4de);
 }
 
-input {
-    min-height: 2em;
-  }
-
   textarea {
     min-height: 6em;
   }
@@ -531,13 +547,7 @@ select {
     padding: 5px;
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMCAxMDAiIGlkPSJMYXllcl8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBmaWxsPSIjMDEwMTAxIiBwb2ludHM9IjIzLjEsMzQuMSA1MS41LDYxLjcgODAsMzQuMSA4MS41LDM1IDUxLjUsNjQuMSAyMS41LDM1IDIzLjEsMzQuMSAiLz48L3N2Zz4=) no-repeat right var(--cream, #e8e4de);
     -webkit-appearance: none;
-    background-position-x: 280px;
-}
-
-@media (min-width: 1000px) {
-    select {
-        background-position-x: 1040px;
-    }
+    background-position-x: 98%;
 }
 
 /* --------------
@@ -551,6 +561,13 @@ button.article-btn {
     text-transform: uppercase;
     font-size: 13px;
     cursor: pointer;
+}
+
+.form-btn {
+    text-transform: uppercase;
+    color: var(--green, #275230);
+    font-size: 1.25em;
+    background: transparent;
 }
 
 /* --------------
