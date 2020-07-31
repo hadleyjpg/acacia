@@ -104,12 +104,20 @@ footer {
 .quote-container {
     display: flex;
     vertical-align: middle;
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
 }
 
 .quote-container {
     padding: 0px;
 }
+
+.quote-container h2 {
+    font-size: 2em;
+    line-height: 1.25em;
+}
+
+
+
 
 @media (min-width: 800px) {
 
@@ -127,7 +135,7 @@ footer {
     }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 1144px) {
     .desktop {
         display: none;
     }
@@ -137,6 +145,17 @@ footer {
     .article-flex {
         margin: 0 auto;
         width: 80%;
+    }
+}
+
+@media (max-width: 280px) {
+    header a,
+    header img {
+        width: 80%;
+    }
+
+    .article-flex img {
+        width: 200px;
     }
 }
 
@@ -315,6 +334,8 @@ button.hamburger {
 @media (max-width: 1001px) {
     ul.nav {
         display: none;
+        width: 100%;
+        
     }
 }
 
@@ -579,6 +600,11 @@ button.article-btn {
 
     q h1 {
         font-size: 4em;
+    }
+
+    .quote-container h2 {
+        font-size: 4em;
+        line-height: 4.5em;
     }
 }
 
